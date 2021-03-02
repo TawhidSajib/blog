@@ -1,13 +1,7 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        blog
-      </div>
+    <v-app-bar app color="primary" dark>
+      <div class="d-flex align-center">blog</div>
 
       <v-spacer></v-spacer>
 
@@ -22,20 +16,15 @@
     </v-app-bar>
 
     <v-main>
-      <Form/>
+      <router-view></router-view>
+      <!-- Must add router-view to show for all page -->
     </v-main>
   </v-app>
 </template>
 
 <script>
-import Form from './components/Form';
-
 export default {
-  name: 'App',
-
-  components: {
-    Form,
-  },
+  name: "App",
 
   data: () => ({
     //
