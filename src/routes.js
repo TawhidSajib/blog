@@ -4,11 +4,9 @@ export const routes = [
     {
         path: '',
         component: Form,
-        children: [
-            {
-                path: ':id',
-                component: Id
-            }
-        ]
+    },
+{
+      path: '/blog/:id',
+      component: Id
     }
 ]

@@ -1,6 +1,6 @@
 <template>
 <div>
-    <router-view></router-view>
+  
   <v-card class="ma-3 pa-2" v-for="post in posts" :key="post.id" @click="detail(post)">
       <h2 class="text-center">{{ post.title }}</h2>
        <p>{{ post.body }}</p>
@@ -30,7 +30,7 @@ export default {
             })
         },
         detail(data){
-            this.$router.push('' + data.id)
+            this.$router.push('/blog/' + data.id)
             
         }
     }
