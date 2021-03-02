@@ -2,11 +2,11 @@ import Form from './components/Form';
 import Id from './components/Id';
 export const routes = [
     {
-        path: '',
+        path: '/blog',
         component: Form,
     },
-{
-      path: '/blog/:id',
-      component: Id
+    {
+        path: '/blog/:id',
+        component: Id
     }
 ]
