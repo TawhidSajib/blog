@@ -30,7 +30,7 @@ export default {
             })
         },
         detail(data){
-            this.$router.push('/users-detail/' + data.id)
+            this.$router.push('' + data.id)
             
         }
     }

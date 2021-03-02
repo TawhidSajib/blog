@@ -15,7 +15,9 @@ export default {
         singleData: {}
         }
     },
-    
+    created(){
+   this.getData()
+    },
     methods: {
         getData(){
             axios.get('https://jsonplaceholder.typicode.com/posts/' + this.$route.params.id)
